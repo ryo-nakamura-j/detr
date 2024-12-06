@@ -149,8 +149,8 @@ def build(image_set, args):
     assert root.exists(), f'provided weapon path {root} does not exist'
     mode = 'instances'
     PATHS = {
-        "train": (root / "Datasets/OD-weapon-detection/Pistol detection/Weapons", root / "Datasets/OD-weapon-detection/annotations.json"),
-        "val": (root / "Datasets/OD-weapon-detection/Pistol detection/Weapons", root / "Datasets/OD-weapon-detection/annotations.json"),
+        "train": (root / "Datasets/OD-WeaponDetection/Pistol detection/Weapons", root / "Datasets/OD-WeaponDetection/annotations.json"),
+        "val": (root / "Datasets/OD-WeaponDetection/Pistol detection/Weapons", root / "Datasets/OD-WeaponDetection/annotations.json"),
     }
 
     img_folder, ann_file = PATHS[image_set]
